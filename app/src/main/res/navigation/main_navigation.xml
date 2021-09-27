@@ -21,10 +21,19 @@
         android:id="@+id/categoryFragment"
         android:name="com.gunder.mynavigation.CategoryFragment"
         android:label="fragment_category"
-        tools:layout="@layout/fragment_category" />
+        tools:layout="@layout/fragment_category" >
+        <action
+            android:id="@+id/action_categoryFragment_to_detaikCategoryFragment"
+            app:destination="@id/detaikCategoryFragment" />
+    </fragment>
     <activity
         android:id="@+id/profileActivity"
         android:name="com.gunder.mynavigation.ProfileActivity"
         android:label="activity_profile"
         tools:layout="@layout/activity_profile" />
+    <fragment
+        android:id="@+id/detaikCategoryFragment"
+        android:name="com.gunder.mynavigation.DetaikCategoryFragment"
+        android:label="fragment_detaik_category"
+        tools:layout="@layout/fragment_detaik_category" />
 </navigation>
