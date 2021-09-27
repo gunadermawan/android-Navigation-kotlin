@@ -23,8 +23,8 @@
         android:label="fragment_category"
         tools:layout="@layout/fragment_category" >
         <action
-            android:id="@+id/action_categoryFragment_to_detaikCategoryFragment"
-            app:destination="@id/detaikCategoryFragment" />
+            android:id="@+id/action_categoryFragment_to_detailCategoryFragment"
+            app:destination="@id/detailCategoryFragment" />
     </fragment>
     <activity
         android:id="@+id/profileActivity"
@@ -32,8 +32,8 @@
         android:label="activity_profile"
         tools:layout="@layout/activity_profile" />
     <fragment
-        android:id="@+id/detaikCategoryFragment"
-        android:name="com.gunder.mynavigation.DetaikCategoryFragment"
-        android:label="fragment_detaik_category"
-        tools:layout="@layout/fragment_detaik_category" />
+        android:id="@+id/detailCategoryFragment"
+        android:name="com.gunder.mynavigation.DetailCategoryFragment"
+        android:label="fragment_detail_category"
+        tools:layout="@layout/fragment_detail_category" />
 </navigation>
