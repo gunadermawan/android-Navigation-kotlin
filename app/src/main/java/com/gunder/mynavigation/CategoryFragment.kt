@@ -25,11 +25,18 @@ class CategoryFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.btnCategoryLifecycle.setOnClickListener { _ ->
-            val mBundle = Bundle()
-            mBundle.putString(EXTRA_NAME,"Ini adalah data yang dikirim")
-            mBundle.putLong(EXTRA_STOCK, 9)
-            view.findNavController().navigate(R.id.action_categoryFragment_to_detailCategoryFragment,mBundle)
+//        kirim dta dengan bundle
+//        binding.btnCategoryLifecycle.setOnClickListener { _ ->
+//            val mBundle = Bundle()
+//            mBundle.putString(EXTRA_NAME,"Ini adalah data yang dikirim")
+//            mBundle.putLong(EXTRA_STOCK, 9)
+//            view.findNavController().navigate(R.id.action_categoryFragment_to_detailCategoryFragment,mBundle)
+//        }
+        binding.btnCategoryLifecycle.setOnClickListener { view->
+            val toDetailCategoryFragment = CategoryFragmentDirections.actionCategoryFragmentToDetailCategoryFragment()
+            toDetailCategoryFragment.name = "ini adalah contoh pengirman data"
+            toDetailCategoryFragment.stock = 9
+            view.findNavController().navigate(toDetailCategoryFragment)
         }
     }
 
