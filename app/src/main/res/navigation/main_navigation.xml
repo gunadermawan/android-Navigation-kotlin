@@ -30,7 +30,11 @@
         android:id="@+id/profileActivity"
         android:name="com.gunder.mynavigation.ProfileActivity"
         android:label="activity_profile"
-        tools:layout="@layout/activity_profile" />
+        tools:layout="@layout/activity_profile"/>
+        <deepLink
+            android:id="@+id/deeplink"
+            app:uri="https://www.dicoding.com/profile"
+        />
     <fragment
         android:id="@+id/detailCategoryFragment"
         android:name="com.gunder.mynavigation.DetailCategoryFragment"
